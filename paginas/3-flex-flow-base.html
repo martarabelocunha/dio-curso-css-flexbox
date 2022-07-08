@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos CSS Flex Box - flex.flow</title>
+    <style>
+        .flex-container{
+            display: flex;
+            /*flex-flow: row nowrap;*/
+            border: 1px solid black;
+            max-width: 500px;
+            margin-bottom: 10px;
+            max-height: 200px;
+        }
+        -default{
+            flex-flow: row nowrap;
+        }
+        .wrap{
+            flex-flow: row wrap;
+        }
+        .wrap-reverse{
+            flex-flow: row wrap-reverse;
+        }
+        .row-reverse-wrap{
+            flex-flow: row-reverse wrap;
+        }
+        .row-reverse-nowrap{
+            flex-flow: row-reverse nowrap;
+        }
+        .column-wrap-reverse{
+            flex-flow: column wrap-reverse;
+        }
+        .item{
+            background-color: blueviolet;
+            margin: 5px;
+            color: white;
+            text-align: center;
+            width: 50px;
+            height: 50px;
+            line-height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Propriedade flex-flow - row nowrap </h1>
+    <div class="flex-container default">
+        <div class="class item">01</div>
+        <div class="class item">02</div>
+        <div class="class item">03</div>
+        <div class="class item">04</div>
+        <div class="class item">05</div>
+    </div>
+    <h1>Propriedade flex-flow - row wrap </h1>
+    <div class="flex-container wrap">
+        <div class="class item">01</div>
+        <div class="class item">02</div>
+        <div class="class item">03</div>
+        <div class="class item">04</div>
+        <div class="class item">05</div>
+    </div>
+    <h1>Propriedade flex-flow - row wrap-reverse </h1>
+    <div class="flex-container wrap-reverse">
+        <div class="class item">01</div>
+        <div class="class item">02</div>
+        <div class="class item">03</div>
+        <div class="class item">04</div>
+        <div class="class item">05</div>
+    </div>
+    <h1>Propriedade flex-flow - row-reverse wrap </h1>
+    <div class="flex-container row-reverse-wrap">
+        <div class="class item">01</div>
+        <div class="class item">02</div>
+        <div class="class item">03</div>
+        <div class="class item">04</div>
+        <div class="class item">05</div>
+    </div>
+    <h1>Propriedade flex-flow - row-reverse nowrap </h1>
+    <div class="flex-container row-reverse-nowrap">
+        <div class="class item">01</div>
+        <div class="class item">02</div>
+        <div class="class item">03</div>
+        <div class="class item">04</div>
+        <div class="class item">05</div>
+    </div>
+    <h1>Propriedade flex-flow - column wrap-reverse </h1>
+    <div class="flex-container column-wrap-reverse">
+        <div class="class item">01</div>
+        <div class="class item">02</div>
+        <div class="class item">03</div>
+        <div class="class item">04</div>
+        <div class="class item">05</div>
+    </div>
+</body>
+</html>

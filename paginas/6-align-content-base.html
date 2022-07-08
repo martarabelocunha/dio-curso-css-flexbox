@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos CSS Flex Box - align.content</title>
+    <style>
+        .container{
+            height: 350px;
+            max-width: 300px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            border: 1px solid black;
+        }
+        .item{
+            background-color: orangered;
+            padding: 0 5px;
+            margin: 5px;
+            flex: 1;
+            text-align: center;
+            color: white;
+            border: 1px solid black
+        }
+        .stretch{
+            align-content: stretch;
+        }
+        .center{
+            align-content: center;
+        }
+        .flex-start{
+            align-content: flex-start;
+        }
+        .flex-end{
+            align-content: flex-end;
+        }
+        .space-around{
+            align-content: space-around;
+        }
+        .space-between{
+            align-content: space-between;
+        }
+    </style>
+</head>
+<body>
+    <p>Propriedade align-content com comportamento padrão -> stretch</p>
+    <section class="container">
+        <div class="item">Lorem Ipsum is simply dummy text. </div>
+        <div class="item">a dummy text ever since</div>
+        <div class="item"> unknown printer took a galley of type </div>
+        <div class="item">and scrambled it to make a book.</div>
+        <div class="item"> It has survived not only five centuries,</div>
+        <div class="item">"Neque porro quisquam..."</div>
+        <div class="item">"There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..."</div>
+    </section>
+    <p>Propriedade - com stretch explícito align-content:stretch </p>
+    <section class="container stretch">
+        <div class="item">Lorem Ipsum is simply dummy text. </div>
+        <div class="item">a dummy text ever since</div>
+        <div class="item"> unknown printer took a galley of type </div>
+        <div class="item">and scrambled it to make a book.</div>
+        <div class="item"> It has survived not only five centuries,</div>
+        <div class="item">"Neque porro quisquam..."</div>
+        <div class="item">"There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..."</div>
+    </section>
+    <p>Propriedade - align-content:center</p>
+    <section class="container center">
+        <div class="item">Lorem Ipsum is simply dummy text. </div>
+        <div class="item">a dummy text ever since</div>
+        <div class="item"> unknown printer took a galley of type </div>
+        <div class="item">and scrambled it to make a book.</div>
+        <div class="item"> It has survived not only five centuries,</div>
+        <div class="item">"Neque porro quisquam..."</div>
+        <div class="item">"There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..."</div>
+    </section>
+    <p>Propriedade - align-content:flex-start</p>
+    <section class="container flex-start">
+        <div class="item">Lorem Ipsum is simply dummy text. </div>
+        <div class="item">a dummy text ever since</div>
+        <div class="item"> unknown printer took a galley of type </div>
+        <div class="item">and scrambled it to make a book.</div>
+        <div class="item"> It has survived not only five centuries,</div>
+        <div class="item">"Neque porro quisquam..."</div>
+        <div class="item">"There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..."</div>
+    </section>
+    <p>Propriedade - align-content:flex-end</p>
+    <section class="container flex-end">
+        <div class="item">Lorem Ipsum is simply dummy text. </div>
+        <div class="item">a dummy text ever since</div>
+        <div class="item"> unknown printer took a galley of type </div>
+        <div class="item">and scrambled it to make a book.</div>
+        <div class="item"> It has survived not only five centuries,</div>
+        <div class="item">"Neque porro quisquam..."</div>
+        <div class="item">"There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..."</div>
+    </section>
+    <p>Propriedade - align-content:space-around</p>
+    <section class="container space-around">
+        <div class="item">Lorem Ipsum is simply dummy text. </div>
+        <div class="item">a dummy text ever since</div>
+        <div class="item"> unknown printer took a galley of type </div>
+        <div class="item">and scrambled it to make a book.</div>
+        <div class="item"> It has survived not only five centuries,</div>
+        <div class="item">"Neque porro quisquam..."</div>
+        <div class="item">"There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..."</div>
+    </section>
+    <p>Propriedade - align-content:space-between</p>
+    <section class="container space-between">
+        <div class="item">Lorem Ipsum is simply dummy text. </div>
+        <div class="item">a dummy text ever since</div>
+        <div class="item"> unknown printer took a galley of type </div>
+        <div class="item">and scrambled it to make a book.</div>
+        <div class="item"> It has survived not only five centuries,</div>
+        <div class="item">"Neque porro quisquam..."</div>
+        <div class="item">"There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..."</div>
+    </section>
+</body>
+</html>
