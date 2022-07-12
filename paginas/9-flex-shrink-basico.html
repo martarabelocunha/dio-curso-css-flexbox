@@ -1,0 +1,107 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos CSS Flex Box - flex.shrink</title>
+    <style>
+        .flex-container{
+            display: flex;
+            border: 1px solid black;
+            max-width: 350px;
+        }
+        .item{
+            background-color: orangered;
+            margin: 5px;
+            font-size: 24px;
+            text-align: center;            
+        }
+        .flex-shrink-1{
+            flex-shrink: 1;
+        }
+        .flex-grow-1{
+            flex-grow: 1;
+        }
+        .flex-shrink-0{
+            flex-shrink: 0;
+            flex-basis: 100px;
+        }
+        .flex-shrink-1b{
+            flex-shrink: 1;
+            flex-basis: 500px;
+        }
+        .flex-shrink-2{
+            flex-shrink: 2;
+            flex-basis: 100px;
+        }
+        .flex-shrink-3{
+            flex-shrink: 3;
+            /*flex-basis: 100px;*/
+        }
+    </style>
+</head>
+<body>
+    <h1>Propriedade flex-container (A) - flex-shrink-1 flex-grow-1 </h1>
+    <div class="flex-container">
+        <div class="item flex-shrink-1 flex-grow-1">A</div>
+        <div class="item flex-shrink-1 flex-grow-1">B</div>
+        <div class="item flex-shrink-1 flex-grow-1">C</div>
+        <div class="item flex-shrink-1 flex-grow-1">D</div>
+        <div class="item flex-shrink-1 flex-grow-1">E</div>
+    </div>
+    <h1>Propriedade flex-container (B) - flex-shrink-1 flex-grow-1 </h1>
+    <div class="flex-container">
+        <div class="item flex-shrink-1 flex-grow-1">A</div>
+        <div class="item flex-shrink-1 flex-grow-1">B</div>
+        <div class="item flex-shrink-1 flex-grow-1">C</div>
+        <div class="item flex-shrink-1 flex-grow-1">D</div>
+        <div class="item flex-shrink-1 flex-grow-1">E</div>
+        <div class="item flex-shrink-1 flex-grow-1">E</div>
+        <div class="item flex-shrink-1 flex-grow-1">E</div>
+        <div class="item flex-shrink-1 flex-grow-1">E</div>
+        <div class="item flex-shrink-1 flex-grow-1">E</div>
+        <div class="item flex-shrink-1 flex-grow-1">E</div>
+        <div class="item flex-shrink-1 flex-grow-1">E</div>
+    </div>
+    <h1>Propriedade flex-container (C) - flex-shrink-1 flex-grow-1 </h1>
+    <div class="flex-container">
+        <div class="item flex-shrink-1 flex-grow-1">A</div>
+        <div class="item flex-shrink-1 flex-grow-1">BCDE</div>
+        <div class="item flex-shrink-1 flex-grow-1">CAR</div>
+        <div class="item flex-shrink-1 flex-grow-1">D TEXTO LONGO TEXTO LONGO</div>
+        <div class="item flex-shrink-1 flex-grow-1">E</div>
+    </div>
+        <h1>Propriedade flex-container (C) - flex-shrink-1 flex-grow-1 </h1>
+    <div class="flex-container">
+        <div class="item flex-shrink-1 flex-grow-1">A</div>
+        <div class="item flex-shrink-1 flex-grow-1">BCDE</div>
+        <div class="item flex-shrink-1 flex-grow-1">CAR</div>
+        <div class="item flex-shrink-1 flex-grow-1">D TEXTO LONGO TEXTO </div>
+        <div class="item flex-shrink-1 flex-grow-1">E</div>
+    </div>
+    <h1>Propriedade flex-container (D) - flex-shrink-0 flex-grow-1 </h1>
+    <div class="flex-container">
+        <div class="item flex-shrink-0 flex-grow-1">A</div>
+        <div class="item flex-shrink-0 flex-grow-1">BCDE</div>
+        <div class="item flex-shrink-0 flex-grow-1">CAR</div>
+        <div class="item flex-shrink-0 flex-grow-1">D TEXTO LONGO TEXTO</div>
+        <div class="item flex-shrink-0 flex-grow-1">E</div>
+    </div>
+    <h1>Propriedade flex-container (E) - flex-shrink-1b flex-grow-1 </h1>
+    <div class="flex-container">
+        <div class="item flex-shrink-1b flex-grow-1">A TEXTO LONGO TEXTO LONGO </div>
+        <div class="item flex-shrink-1b flex-grow-1">BCDE</div>
+        <div class="item flex-shrink-1b flex-grow-1">CAR TEXTO LONGO </div>
+        <div class="item flex-shrink-1b flex-grow-1">D TEXTO LONGO TEXTO</div>
+        <div class="item flex-shrink-1b flex-grow-1">E</div>
+    </div>
+    <h1>Propriedade flex-container (F) - flex-shrink-2 flex-grow-1 </h1>
+    <div class="flex-container">
+        <div class="item flex-shrink-1 flex-grow-1">A</div>
+        <div class="item flex-shrink-0 flex-grow-1">BCDE</div>
+        <div class="item flex-shrink-1b flex-grow-1">CAR TEXTO LONGO </div>
+        <div class="item flex-shrink-3 flex-grow-1">D TEXTO LONGO TEXTO</div>
+        <div class="item flex-shrink-2 flex-grow-1">E</div>
+    </div>
+</body>
+</html>
